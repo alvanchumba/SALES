@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotdog Sales Tracker</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Hotdog Sales Tracker</h1>
+    <form id="sales-form">
+        <label for="day">Day:</label>
+        <input type="datetime-local" id="day" required>
+
+        <label for="quantity">Quantity Sold:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="amount">Amount Spent ($):</label>
+        <input type="number" id="amount" required>
+
+        <button type="submit">Record Sales</button>
+    </form>
+
+    <h2>Previous Sales</h2>
+    <div id="sales-records"></div>
+
+    <h2>Totals</h2>
+    <div id="totals">
+        <p><strong>Total Quantity Sold:</strong> <span id="total-quantity">0</span></p>
+        <p><strong>Total Amount Spent:</strong> $<span id="total-amount">0.00</span></p>
+        <p><strong>Total Sales:</strong> $<span id="total-sales">0.00</span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
